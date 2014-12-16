@@ -1,0 +1,27 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+pcjpcj2:ratchet
+accounts-base
+accounts-password
+iron:router
+jquery
+mizzao:jquery-ui
+launch-screen
+less
+mizzao:bootstrap-3
+alanning:roles
+underscore
+jelena:meteor-perspective-navigation
+rzymek:fullcalendar
+linto:fontawesome
+hedcet:touch-swipe
+zimme:iron-router-active
+fastclick
+accounts-ui
+useraccounts:core
+useraccounts:ratchet
+

@@ -1,0 +1,17 @@
+<template name="events">
+	<div class="events">
+	{{> fullcalendar options}}
+	</div>
+<script>
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			});
+		
+	});
+</script>
+</template>

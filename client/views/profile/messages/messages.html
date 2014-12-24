@@ -1,0 +1,87 @@
+<template name="messages">
+	<div class="messages">
+	<ul class="table-view">
+	  <li class="table-view-cell media">
+	    <a class="navigate-right">
+	      <img class="media-object pull-left" src="http://placehold.it/42x42">
+	      <div class="media-body">
+	        Item 1
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </a>
+	  </li>
+	  <li class="table-view-cell media">
+	    <a class="navigate-right">
+	      <img class="media-object pull-left" src="http://placehold.it/42x42">
+	      <div class="media-body">
+	        Item 1
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </a>
+	  </li>
+	  <li class="table-view-cell media">
+	    <a class="navigate-right">
+	      <img class="media-object pull-left" src="http://placehold.it/42x42">
+	      <div class="media-body">
+	        Item 1
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </a>
+	  </li>
+	</ul>
+	<ul class="table-view">
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <img class="media-object pull-left" src="http://placehold.it/42x42">
+      <div class="media-body">
+        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+  </li>
+</ul>
+	
+	</div>
+	{{>messagesbar}}
+</template>
+
+<template name="messagesbar">
+<nav class="bar bar-tab">
+
+	<a class="tab-item" href="{{pathFor route='profile' username=username}}">
+	<span class="icon icon-person"></span>
+	<span class="tab-label">Profile</span>
+	</a>
+	<a class="tab-item" href="#">
+	<span class="icon icon-check"></span>
+	<span class="tab-label">Scorecard</span>
+	</a>
+	<a class="tab-item active" href="{{pathFor route='messages' username=username}}">
+	<span class="icon icon-compose"></span>
+	<span class="tab-label">Messages</span>
+	</a>
+
+	<a class="tab-item" href="#">
+	<span class="icon icon-search"></span>
+	<span class="tab-label">Search</span>
+	</a>
+</nav>
+</template>

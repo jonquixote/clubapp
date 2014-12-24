@@ -1,19 +1,27 @@
 <template name="memberheader">
 <header class="bar bar-nav header">
-	<button class="btn pull-left btn-header" id="showMenu">
-		<span class="icon icon-list"></span>
-	</button>
-	{{#if currentUser}}
+{{#if currentUser}}
+	<div class="menu-bars pull-left">
+	<a href="#">
+		<span class="icon icon-bars"></span>
+	</a>
+	</div>
+	<div class="profile-button pull-right">
 	<a href="{{pathFor route='profile' username=username}}">
-	<button class="btn pull-right btn-header">
-		<span class="icon icon-person">{{name}}</span>
-	</button>
-	</a>{{else}}
-	{{> loginButtons}}
-	{{/if}}
+		<span class="icon icon-person">{{profile.firstName}}</span>
+	</a>
+	</div>
+	
 	<div class="logo">
- 	 <a href="{{pathFor route='home'}}" class="logo title"><img src="../images/wilshirelogo.jpg" height="35px"></a>
+ 	 <a href="{{pathFor route='home'}}" class="logo title"><img src="../images/wilshire.png" height="35px"></a>
   	</div>
-</header>
 
+  	{{else}}
+	<div class="logo">
+ 	 <a href="#" class="logo title"><img src="../images/wilshire.png" height="35px"></a>
+  	</div>
+
+	{{/if}}
+
+</header>
 </template>

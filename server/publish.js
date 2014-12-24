@@ -31,3 +31,9 @@ Meteor.publish("userProfile",function(username){
 Meteor.publish(null, function (){ 
   return Meteor.roles.find({})
 });
+
+
+Meteor.publish('messages', function(limit) {
+  Meteor._sleepForMs(2000);
+  return Messages.find({}, {limit: limit});
+});

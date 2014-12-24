@@ -14,7 +14,6 @@ launch-screen
 less
 mizzao:bootstrap-3
 alanning:roles
-underscore
 jelena:meteor-perspective-navigation
 rzymek:fullcalendar
 linto:fontawesome
@@ -24,4 +23,11 @@ fastclick
 accounts-ui
 useraccounts:core
 useraccounts:ratchet
-
+joshowens:simple-form
+underscore
+lepozepo:streams
+mrt:underscore-string-latest
+fredstrange:sidr
+aldeed:collection2
+accounts-twitter
+accounts-facebook
